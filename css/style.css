@@ -1,0 +1,42 @@
+main{
+    font-family: "PT Sans Caption", sans-serif;
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+
+main .inputSection{
+    border-top: 2px black dotted;
+    border-bottom: 2px black dotted;
+}
+
+h1{
+    font-family: Pacifico, cursive;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 70px;
+    z-index: 1
+}
+
+h1::before{
+    content: "";
+    position: absolute;
+    left: 515px;
+    right: 515px;
+    bottom: 0;
+    height: 40%;
+    background-color: #fec260;
+    transition: height .3s;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 70%;
+}
+
+.inputSection h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+}
